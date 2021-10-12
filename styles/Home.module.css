@@ -33,11 +33,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.title span{
+  background: -webkit-linear-gradient(#61f4de, #0f68a9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .title a:hover,
@@ -49,7 +52,9 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  color: #333;
+  font-size: 4em;
+  font-weight: 900;
 }
 
 .title,
@@ -59,7 +64,7 @@
 
 .description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .code {
@@ -112,6 +117,10 @@
 
 .logo {
   height: 1em;
+}
+
+.button {
+  margin: 2em;
 }
 
 @media (max-width: 600px) {
